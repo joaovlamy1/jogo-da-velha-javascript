@@ -55,7 +55,7 @@ function inicializar(){
             )
     }
 }
-function verificarvencedor(){
+ async function verificarvencedor(){
 
     var a1 = document.getElementById("a1").getAttribute("jogada")
     var a2 = document.getElementById("a2").getAttribute("jogada")
@@ -77,12 +77,25 @@ function verificarvencedor(){
         vencedor = b2;
     }else if((c3 == c2 && c3 == c1 && c3!="")||(c3 == a3 && c3 == b3 && c3!="")){
         vencedor = c3;
+    }else if(a1 != "" && a2 != "" && a3 != "" && b1 !="" && b2 !="" && b3 !="" && c1!="" && c2!="" && c3!=""){
+        vencedor = "VELHA"
     }
 
     if(vencedor != ""){
         gameover = true;
 
+        await sleep(50)
+        
         var m = document.getElementById("res")
         m.innerHTML+=(vencedor)
+        if (vencedor == "VELHA") {
+            alert("DEU VELHA")
+        }else{
+        alert("O ganhdor foi o "+vencedor)
+        }
     }
+}
+
+function sleep(ms){
+    return new Promise(resolve => setTimeout(resolve, ms))
 }
