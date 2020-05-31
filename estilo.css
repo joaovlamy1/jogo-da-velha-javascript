@@ -1,0 +1,49 @@
+body{
+   background-color: rgb(77, 77, 223); 
+   font: Arial 15pt normal;
+}
+section{
+   background-color: white;
+   border-radius: 10px;
+   padding: 15px;
+   width: 700px;
+   margin: auto;
+   box-shadow: 5px 5px 10px black;
+   height: 500px;
+}
+header{
+   color: white;
+   text-align: center;
+}
+footer{
+   color: white;
+   text-align: center;
+   font-size: italic;
+}
+div#mostrador{
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 252px;
+   height: 80px;
+   
+}
+.espaço{
+   width: 80px;
+   height: 60px;
+   border: solid 2px black;
+   float: left;
+   text-align: center;
+   padding-top: 20px;
+}
+div#tabuleiro{
+  margin: auto;
+   width: 252px;
+   height: 252px;
+   margin-bottom: 20px;
+}
+div#res{
+   margin: auto;
+   width: 252px;
+   font-size: 30px;
+}
